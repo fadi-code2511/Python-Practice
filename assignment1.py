@@ -33,12 +33,17 @@ while True:
     if option==1:
         print("your current balance is: ",balance,)   #printing the balance
     elif option==2:
-        DepositAmount=int(input("Enter the amount you want to deposit? ")) 
+        DepositAmount=int(input("Enter the amount you want to deposit? "))
+        DepositAmount=abs(DepositAmount) # to make sure the number always postive
         balance=balance+DepositAmount #adding the amount to the balance
         
     elif option==3:
         WithDrawAmount=int(input("Enter the amount you want to withdraw? "))
-        balance=balance-WithDrawAmount # deducting the amount from the balance
+        WithDrawAmount=abs(WithDrawAmount) # to make sure the number always postive
+        if WithDrawAmount<balance:
+         balance=balance-WithDrawAmount # deducting the amount from the balance
+        else:
+            print("no sufficient balance to withdraw,your balance is ",balance)
 
     elif option==4:
         break
