@@ -26,8 +26,9 @@
 
 
 balance=1000
+count=0
 while True:
-    print( "\nWelcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
+    print( "\nWelcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # showing the menu
     option=int(input("Enter the number of the option: "))
 
     if option==1:
@@ -49,5 +50,15 @@ while True:
         break
     else:
         print("you entered a wrong number\n")
+    count=count+1
+
+    print("\nyou have done ",count," transactions ")
+
+
+
+#          Bonus Challenges (Optional):
+# 1. Keep a transaction count and show it at the end.
+# 2. Show a warning if more than 3 failed withdrawals were attempted.
+# 3. Add a password at the start to "log in".
 
 
