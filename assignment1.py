@@ -19,3 +19,12 @@
 # 4. Exit the loop and end the program.
 
 # Validate input where needed (e.g., no negative deposits or withdrawals).
+
+
+
+
+
+
+balance=1000
+# while True:
+print( "Welcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
