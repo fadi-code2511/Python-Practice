@@ -27,17 +27,18 @@
 
 balance=1000
 while True:
-    print( "Welcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
+    print( "\nWelcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
     option=int(input("Enter the number of the option: "))
 
     if option==1:
-        print("your current balance is: ",balance)   #printing the balance
+        print("your current balance is: ",balance,)   #printing the balance
     elif option==2:
-        DepositAmount=int(input("Enter the amount you want to deposit? "))
-        balance=balance+DepositAmount
+        DepositAmount=int(input("Enter the amount you want to deposit? ")) 
+        balance=balance+DepositAmount #adding the amount to the balance
         
     elif option==3:
-        pass
+        WithDrawAmount=int(input("Enter the amount you want to withdraw? "))
+        balance=balance-WithDrawAmount # deducting the amount from the balance
 
     elif option==4:
         break
