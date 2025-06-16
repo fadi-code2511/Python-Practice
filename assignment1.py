@@ -33,7 +33,9 @@ while True:
     if option==1:
         print("your current balance is: ",balance)   #printing the balance
     elif option==2:
-        pass
+        DepositAmount=int(input("Enter the amount you want to deposit? "))
+        balance=balance+DepositAmount
+        
     elif option==3:
         pass
 
