@@ -31,7 +31,7 @@ while True:
     option=int(input("Enter the number of the option: "))
 
     if option==1:
-        pass
+        print("your current balance is: ",balance)   #printing the balance
     elif option==2:
         pass
     elif option==3:
