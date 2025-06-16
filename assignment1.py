@@ -26,5 +26,20 @@
 
 
 balance=1000
-# while True:
-print( "Welcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
+while True:
+    print( "Welcome to the ATM  \n1. Check Balance \n2. Deposit Money \n3. Withdraw Money \n4. Exit") # show the menu
+    option=int(input("Enter the number of the option: "))
+
+    if option==1:
+        pass
+    elif option==2:
+        pass
+    elif option==3:
+        pass
+
+    elif option==4:
+        break
+    else:
+        print("you entered a wrong number\n")
+
+
